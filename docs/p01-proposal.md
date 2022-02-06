@@ -1,3 +1,25 @@
+### Code Name : Vale
+
+### Project title : Economic Inequality and its Dynamics in the United States
+
+
+## Authors:
+
+**Chun Hin Matthew So - chuns4@uw.edu**
+**Sonia Yeh - tzuy3@uw.edu**
+**Atreya Bhamidi - abhamidi@uw.edu**
+**Johnny Carroll - jcarol17@uw.edu**
+
+
+## Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+
+
+## Date: Winter 2022
+
+
+## Abstract
+The COVID-19 pandemic has led to an unprecedented increase in economic inequality in the US. This broadening disparity underlies several social issues plaguing our country, and understanding it could hold the key to the well-being of many groups of people. To analyze trends in and formulate solutions to this inequality, we will be looking at a group of datasets containing information on wealth distribution in the US.
+
 
 ## 1.0 Intro
 
@@ -70,7 +92,7 @@ The primary dataset, titled Distributional Financial Accounts (DFA) - Networth L
 
 * **Who collected the data? How was the data collection effort funded?**
 
-  The data was collected by the National Opinion Research Center (NORC) at the University of Chicago, and is sponsored by the Federal Reserve Board in cooperation with the Department of the Treasury. Data from the SCF, is used by a multitude of organizations, from analysis by the Federal Reserve and news organizations to research by universities and economic research centers. More information the source of the data and the SCF can be found at this link: https://www.federalreserve.gov/econres/aboutscf.htm
+  The data was collected by the National Opinion Research Center (NORC) at the University of Chicago, and is sponsored by the Federal Reserve Board in cooperation with the Department of the Treasury. Data from the SCF, is used by a multitude of organizations, from analysis by the Federal Reserve and news organizations to research by universities and economic research centers. More information the source of the data and the SCF can be found at this [link](https://www.federalreserve.gov/econres/aboutscf.htm).
 
 * **How was the data validated and held secure? Is it credible and trustworthy?**
 
@@ -80,7 +102,7 @@ The primary dataset, titled Distributional Financial Accounts (DFA) - Networth L
 
 * **How did you obtain the data?**
 
-  Through a search for federal data on economic inequity, we came upon the Federal Reserve’s interactive data visualization titled “Distribution of Household Wealth in the U.S. since 1989” found at this [link.](https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/#quarter:128;series:Net%20worth;demographic:networth;population:all;units:levels;range:2006.3,2021.3 )
+  Through a search for federal data on economic inequity, we came upon the Federal Reserve’s interactive data visualization titled “Distribution of Household Wealth in the U.S. since 1989” found at this [link](https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/#quarter:128;series:Net%20worth;demographic:networth;population:all;units:levels;range:2006.3,2021.3 ).
 
   The visualization offered publicly downloadable datasets on each of the categories mentioned above.
 
