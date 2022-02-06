@@ -6,8 +6,11 @@
 ## Authors:
 
 **Chun Hin Matthew So - chuns4@uw.edu**
+
 **Sonia Yeh - tzuy3@uw.edu**
+
 **Atreya Bhamidi - abhamidi@uw.edu**
+
 **Johnny Carroll - jcarol17@uw.edu**
 
 
