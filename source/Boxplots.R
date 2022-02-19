@@ -1,7 +1,7 @@
 #Box Plots for P02
 
-#setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
-setwd("~/Desktop/Info201Project/final-project-starter-AZAHAZA/source")
+setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
+#setwd("~/Desktop/Info201Project/final-project-starter-AZAHAZA/source")
 
 library("ggplot2")
 library("dplyr")
