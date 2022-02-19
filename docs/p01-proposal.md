@@ -31,7 +31,7 @@ The COVID-19 pandemic has led to an unprecedented increase in economic inequalit
   It is thus imperative that socially conscious data scientists analyze the issue of economic inequality. One common way to do so is to collect data regarding distribution of wealth which measures the wealth of a nation including real estate, consumer durables, private businesses, and other financial assets that are distributed among the population. In our project, we look at datasets containing information on wealth distribution by generation, race, education, and income strata. We hope to analyze these datasets to obtain trends in economic inequality over time and identify potential actionable solutions.  
 
 
-## Section 2.0 design situation
+## 2.0 Design situation
 
 * **Project Framing:**
   There was no preparing for the COVID-19 pandemic.  Closed businesses left individuals unemployed while also battling the everyday hardships of the pandemic such as illness, medical bills, and overall uncertainty.  Wealth inequality in the United States has always been high, but with the shock created by covid, our group wanted to examine the effects of the pandemic on this distribution.  By understanding how different groups of people were affected by the pandemic we are able to see if some people are systematically better or worse equipped for the pandemic.  Finally, the better we understand the needs of individuals, the more likely we are to be able to implement effective policies to help them in times of need.
