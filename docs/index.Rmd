@@ -26,11 +26,8 @@ The clustered bar chart shows the differences in the distribution of the data. S
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
-source("../source/Boxplots.R")
-
-White_Plot
-Black_Plot
-Hispanic_Plot
-Other_Plot
+source("../source/Pie_Chart.R")
+fig1
+fig2
 ```
 >>>>>>> 830f4d6f5dbb9911915ebbe801a0d285079b1494
