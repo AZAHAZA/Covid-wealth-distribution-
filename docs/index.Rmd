@@ -84,7 +84,7 @@ The clustered bar chart shows the differences in the distribution of the data. S
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
-source("../source/Pie_Chart.R")
+source("../source/Pie_Charts.R")
 fig1
 fig2
 ```

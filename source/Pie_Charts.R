@@ -4,7 +4,7 @@
 library("tidyverse",warn.conflicts = FALSE)
 library("plotly",warn.conflicts = FALSE)
 library("dplyr",warn.conflicts = FALSE)
-setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
+#setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
 
 dfa.education<-read.csv("../data/dfa-education.csv")
 wealth_education_dist <- dfa.education %>%
