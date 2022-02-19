@@ -5,6 +5,9 @@ setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
 library("ggplot2")
 library("dplyr")
 library("stringr")
+devtools::install_github("ropensci/plotly")
+
+
 
 #First Plots are race by year.  Second Plots show net woth by category 
 
