@@ -42,13 +42,6 @@ fig2
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
-source("../source/Pie_Chart.R")
-fig1
-fig2
-```
-
-```{r, warning = FALSE, echo=FALSE}
-options(tidyverse.quiet = TRUE)
 source("../source/linechart .R")
 fig
 ```
