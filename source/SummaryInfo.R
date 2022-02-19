@@ -57,3 +57,7 @@ liability_asset_ratio_bot20_2021 <- income_distribution[774, 11]/income_distribu
 # The following entry in the list describes the ratio of liability burden, which we define as the ratio of liabilities to assets, between the top 1% and bottom 20% income earners. 
 # This indicates that the bottom 20% face 4 times the liability burden as the top 1%
 summary_info$ratio_of_liability_burden_2021 <- round(liability_asset_ratio_bot20_2021/liability_asset_ratio_top1_2021)
+
+Variable <- c(num_observations, num_variables, percent_inequity_2021, percent_inequity_2018, percent_inequity_1989, diff_mean_median_2021_dollars, diff_mean_median_2018_dollars, diff_mean_median_1989_dollars,ratio_of_liability_burden_2021)
+summary_info$Type <- Type
+summary_info$Variable <- Variable

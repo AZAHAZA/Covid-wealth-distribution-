@@ -39,7 +39,5 @@ MeanLiabilities <- aggregate_table_2 %>%
 AggData <- merge(MeanNetWorth, MeanAssets)
 AggregateDataTable <- merge(AggData, MeanLiabilities) 
 
-AggregateDataTable <- AggregateDataTable %>%
-  rename(AggregateDataTAble, Net.worth = Net Worth)
 
             
