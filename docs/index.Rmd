@@ -1,8 +1,8 @@
 ---
-title: "Economic Inequality and its Dynamics in the United States"
-author: "Chun Hin Matthew So - chuns4@uw.edu,    Sonia Yeh - tzuy3@uw.edu,    Atreya Bhamidi - abhamidi@uw.edu,   Johnny Carroll - jcarol17@uw.edu"
-date: "2/18/2022"
-output: html_document
+Title: "Economic Inequality and its Dynamics in the United States"
+Author: "Chun Hin Matthew So - chuns4@uw.edu,    Sonia Yeh - tzuy3@uw.edu,    Atreya Bhamidi - abhamidi@uw.edu,   Johnny Carroll - jcarol17@uw.edu"
+Date: "2/18/2022"
+Output: html_document
 ---
 
 
