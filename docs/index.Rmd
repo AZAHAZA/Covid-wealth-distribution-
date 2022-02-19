@@ -97,8 +97,7 @@ source("../source/linechart .R")
 fig
 ```
 
-Line Chart Description
-
+The line chart shows the change of wealth distribution from different percentile of income groups during and before the pandemic. Line chart makes it easy and clear to compare the different percentages of assets, also provides a great insight of the income gap between the groups. Further more, the graph shows that **the highest income group has a income change that is 5 times greater thaan the lowest group.** We could also tell that the lower classes experienced a greater impact by the pandemic since the distribution of wealth did not vary a lot for them compared to the higher percentiles. 
 
 
 ## 4.0 The Dataset
