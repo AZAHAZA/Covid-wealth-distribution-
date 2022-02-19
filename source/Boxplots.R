@@ -1,4 +1,45 @@
 #Box Plots for P02
+#First Plots are race by year.  Second Plots show net woth by category 
+
+#RACE:White
+
+White<-dfa.race %>%
+  filter(Category=='White')%>%
+  filter(Date =='2018:Q1'| Date=='2019:Q1'| Date=='2020:Q1'| Date=='2021:Q1')
+
+
+
+White_Plot<-ggplot(White, aes(Date,Net.worth))+geom_boxplot()+labs(title = "Distriution Of White Wealth Pre and Post Pandemic",xlab="Year",ylab="Net Worth") 
+
+#Race:Black 
+
+Black<-dfa.race %>%
+  filter(Category=='Black')%>%
+  filter(Date =='2018:Q1'| Date=='2019:Q1'| Date=='2020:Q1'| Date=='2021:Q1')
+
+
+
+Black_Plot<-ggplot(Black, aes(Date,Net.worth))+geom_boxplot()+labs(title = "Distriution Of Black Wealth Pre and Post Pandemic",xlab="Year",ylab="Net Worth") 
+
+#Race:Hispanic
+
+Hispanic<-dfa.race %>%
+  filter(Category=='Hispanic')%>%
+  filter(Date =='2018:Q1'| Date=='2019:Q1'| Date=='2020:Q1'| Date=='2021:Q1')
+
+
+
+Hispanic_Plot<-ggplot(Hispanic, aes(Date,Net.worth))+geom_boxplot()+labs(title = "Distriution Of Hispanic Wealth Pre and Post Pandemic",xlab="Year",ylab="Net Worth") 
+
+#Race:Other
+
+Other<-dfa.race %>%
+  filter(Category=='Other')%>%
+  filter(Date =='2018:Q1'| Date=='2019:Q1'| Date=='2020:Q1'| Date=='2021:Q1')
+
+
+
+Other_Plot<-ggplot(Other, aes(Date,Net.worth))+geom_boxplot()+labs(title = "Distriution Of Other Wealth Pre and Post Pandemic",xlab="Year",ylab="Net Worth") 
 
 #RACE
 
@@ -6,8 +47,8 @@
 race2<-dfa.race %>%
   group_by(Category) %>%
   filter(str_detect(Date, "2016:Q1"))%>%
-  summarise(ave_net=mean(Net.worth))
-boxplot(race2$ave_net~race2$Category,xlab = "Race",ylab = "Net Worth",
+  summarise(Net_Worth=mean(Net.worth))
+boxplot(race2$Net_Worth~race2$Category,xlab = "Race",ylab = "Net Worth",
         main="Prepandemic Wealth Distribution by Race")
 
 #postpandemic
@@ -91,6 +132,8 @@ networth3<-dfa.networth %>%
   summarise(ave_net=mean(Net.worth))
 boxplot(networth3$ave_net~networth3$Category, xlab = "Wealth Level",ylab = "Net Worth",
         main="Post-pandemic Wealth Distribution by Wealth Level")
+
+      
 
 
 
