@@ -15,7 +15,7 @@ fig <- plot_ly(
   type = "scatter", 
   mode = "lines" 
 ) %>% layout(
-    title = "Wealth Distribution During Pandemic and pre- pandemic",
+    title = "Wealth Distribution Before and During the Pandemic by Income Percentile Groups",
     xaxis = list(title = 'Date'), 
     yaxis = list(title = 'Assets') 
   )
