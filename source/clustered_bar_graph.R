@@ -21,7 +21,7 @@ clustered_bar_chart <- plot_ly(
 ) %>%
   layout(
     title = "Wealth Distribution During Pre-panedmic and Pandemic",
-    xaxis = list(title = "Assets"), 
-    yaxis = list(title = "Date") 
+    xaxis = list(title = "Date"), 
+    yaxis = list(title = "Assets") 
   )
 
