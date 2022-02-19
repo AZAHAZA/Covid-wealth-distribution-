@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## What is this file for?
 
+<<<<<<< HEAD
 * This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
 
 * Please see Canvas for more details.
@@ -58,6 +59,9 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 ## clustered bar chart
+=======
+## Clustered bar chart
+>>>>>>> b4b7d979149a14603230eb8c6a72cf72edd90e33
 
 
 

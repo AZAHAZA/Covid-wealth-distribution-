@@ -1,6 +1,7 @@
 #Box Plots for P02
 
 setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
+#setwd("~/Desktop/Info201Project/final-project-starter-AZAHAZA/source")
 
 library("ggplot2")
 library("dplyr")
@@ -11,7 +12,7 @@ devtools::install_github("ropensci/plotly")
 
 #First Plots are race by year.  Second Plots show net woth by category 
 
-
+dfa.race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
 #RACE:White
 
 White<-dfa.race %>%
