@@ -60,8 +60,6 @@ liability_asset_ratio_bot20_2021 <- income_distribution[774, 11]/income_distribu
 # This indicates that the bottom 20% face 4 times the liability burden as the top 1%
 summary_info$ratio_of_liability_burden_2021 <- round(liability_asset_ratio_bot20_2021/liability_asset_ratio_top1_2021)
 
-data.table(summary_info)
-#Variable <- c(summary_info$num_observations, summary_info$num_variables, summary_info$percent_inequity_2021, summary_info$percent_inequity_2018, summary_info$percent_inequity_1989, summary_info$diff_mean_median_2021_dollars, summary_info$diff_mean_median_2018_dollars, summary_info$diff_mean_median_1989_dollars, summary_info$ratio_of_liability_burden_2021)
-#summary_info$Type <- Type
-#summary_info$Variable <- Variable
+summary_table <- as.data.frame(do.call(cbind, summary_info))
+
 

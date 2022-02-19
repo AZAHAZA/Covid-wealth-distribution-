@@ -112,7 +112,7 @@ options(tidyverse.quiet = TRUE)
 source("../source/SummaryInfo.R")
 df <- data.frame(summary_info)
 
-table(df)
+kable(df)
 ```
 
 The first two entries show the number of of observations (rows) and variables (columns) in the dataset, respectively. The next three entries describe the difference in percentage of net worth distribution between the Top 1% and Bottom 20% of income earners in three key years: 2021 (during the pandemic), 2018 (before the pandemic), 
@@ -171,7 +171,7 @@ For a brief glimpse at the Income dataset, here is a table with several entries 
 library("knitr")
 options(tidyverse.quiet = TRUE)
 source("../source/AggregateTable.R")
-aggregate_table
+kable(aggregate_table)
 ```
 
 Here are some aggregate datapoints, taking the mean for three variables - net worth, assets, and liabilities - for each income percentile group. 
