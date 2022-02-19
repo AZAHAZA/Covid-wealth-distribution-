@@ -1,9 +1,9 @@
 ### Code Name : Vale
 
-### Project title : Economic Inequality and its Dynamics in the United States
+## Project title : Economic Inequality and its Dynamics in the United States
 
 
-## Authors:
+### Authors:
 
 **Chun Hin Matthew So - chuns4@uw.edu**
 
