@@ -1,10 +1,12 @@
-setwd("C:/Users/Atrey/OneDrive/Desktop/Info201Code/final-project-starter-AZAHAZA")
+#setwd("C:/Users/Atrey/OneDrive/Desktop/Info201Code/final-project-starter-AZAHAZA")
 
 
 
 library(tidyverse)
 library(dplyr)
-install.packages(plotly)
+# install.packages(plotly)
+library(plotly)
+
 
 #Our
 income_distribution <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-AZAHAZA/main/data/dfa-income.csv")
@@ -58,6 +60,8 @@ liability_asset_ratio_bot20_2021 <- income_distribution[774, 11]/income_distribu
 # This indicates that the bottom 20% face 4 times the liability burden as the top 1%
 summary_info$ratio_of_liability_burden_2021 <- round(liability_asset_ratio_bot20_2021/liability_asset_ratio_top1_2021)
 
-Variable <- c(num_observations, num_variables, percent_inequity_2021, percent_inequity_2018, percent_inequity_1989, diff_mean_median_2021_dollars, diff_mean_median_2018_dollars, diff_mean_median_1989_dollars,ratio_of_liability_burden_2021)
-summary_info$Type <- Type
-summary_info$Variable <- Variable
+data.table(summary_info)
+#Variable <- c(summary_info$num_observations, summary_info$num_variables, summary_info$percent_inequity_2021, summary_info$percent_inequity_2018, summary_info$percent_inequity_1989, summary_info$diff_mean_median_2021_dollars, summary_info$diff_mean_median_2018_dollars, summary_info$diff_mean_median_1989_dollars, summary_info$ratio_of_liability_burden_2021)
+#summary_info$Type <- Type
+#summary_info$Variable <- Variable
+

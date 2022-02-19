@@ -2,7 +2,7 @@ library(tidyverse)
 library(dplyr)
 library(tidyr)
 library(data.table)
-setwd("C:/Users/Atrey/OneDrive/Desktop/Info201Code/final-project-starter-AZAHAZA")
+#setwd("C:/Users/Atrey/OneDrive/Desktop/Info201Code/final-project-starter-AZAHAZA")
 
 
 income_distribution <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-AZAHAZA/main/data/dfa-income.csv")
