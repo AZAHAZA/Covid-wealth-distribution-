@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r, warning = FALSE, echo=FALSE}
 library("knitr")
 options(tidyverse.quiet = TRUE)
-source("../source/SummaryInfo copy.R")
+source("../source/SummaryInfo.R")
 df <- data.frame(summary_info)
 
 kable(df)
