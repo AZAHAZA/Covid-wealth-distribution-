@@ -1,4 +1,7 @@
 #Box Plots for P02
+
+setwd("/Users/school/INFO-201code/projects/final-project-starter-AZAHAZA")
+
 library("ggplot2")
 library("dplyr")
 library("stringr")
