@@ -1,11 +1,12 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "Economic Inequality and its Dynamics in the United States"
+author: "Chun Hin Matthew So - chuns4@uw.edu,    Sonia Yeh - tzuy3@uw.edu,    Atreya Bhamidi - abhamidi@uw.edu,   Johnny Carroll - jcarol17@uw.edu"
+date: "2/18/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+
+```{r setup, include=FALSE,warning=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -55,10 +56,9 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 
-```{r, echo=FALSE}
-
+```{r, warning = FALSE, echo=FALSE}
 source("../source/clustered_bar_graph.R")
-chart
 
+clustered_bar_chart
 ```
 
