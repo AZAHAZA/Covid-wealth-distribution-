@@ -57,6 +57,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 ```{r, warning = FALSE, echo=FALSE}
+options(tidyverse.quiet = TRUE)
 source("../source/clustered_bar_graph.R")
 
 clustered_bar_chart

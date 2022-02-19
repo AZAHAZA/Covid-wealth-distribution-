@@ -1,8 +1,8 @@
 #Bar chart for the PO2
 
 #tidyverse
-library("tidyverse")
-library("plotly")
+library("tidyverse",warn.conflicts = FALSE)
+library("plotly",warn.conflicts = FALSE)
 # setwd("~/Desktop/Info201Project/final-project-starter-AZAHAZA/source")
 
 wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
