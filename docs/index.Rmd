@@ -3,20 +3,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-<<<<<<< HEAD
 ### Code Name : Vale
-=======
-```{r, warning = FALSE, echo=FALSE}
-library("knitr")
-options(tidyverse.quiet = TRUE)
-source("../source/SummaryInfo.R")
-df <- data.frame(summary_info)
->>>>>>> 8b957ea9279c1340d6fba74784b3718db1e529e8
 
 ## Project title : Economic Inequality and its Dynamics in the United States
 
 
-<<<<<<< HEAD
 ### Authors:
 
 **Chun Hin Matthew So - chuns4@uw.edu**
@@ -82,16 +73,21 @@ Economic inequality is at the root of many social issues. By looking into such i
 
 As a first look at some of these questions, we have made a few charts to help visualize the distribution of wealth across the various factors using data from each of our datasets. 
 
-=======
->>>>>>> 8b957ea9279c1340d6fba74784b3718db1e529e8
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
 source("../source/clustered_bar_graph.R")
 
 clustered_bar_chart
 ```
+
 The clustered bar chart shows the differences in the distribution of the data. Since the data for the chart contains one categorical and one numerical value, our group used a cluster bar chart to demonstrate <strong> the wealth distribution before and during the pandemic in different ethnicity to illustrate inequality</strong>. Besides, we decide to integrate <strong> interactive elements into the graph </strong> for better clarity. For example, when the user selects a section of the chart by left-clicking, it will automatically zoom into that section of the chart. After that, it will automatically re-scale itself by clicking the auto-scale button on the top right corner. The user can gain information when hovering over the bar. According to the chart, White Americans' wealth has increased steadily before and during the pandemic. However, minorities' wealth has remained mainly unchanged. Besides, White Americans' wealth is **at least six times** more than any minorities' wealth. Nonetheless, the chart provides evidence that correlates wealth inequality to minorities during the pandemic. 
 
+```{r, warning = FALSE, echo=FALSE}
+options(tidyverse.quiet = TRUE)
+source("../source/Pie_Chart.R")
+fig1
+fig2
+```
 
 The pie charts show changes in wealth distribution by educational level from before and during the pandemic. Pie charts are simple but effective in displaying variables as percentage shares, and thus these charts provide valuable information about the concentration of wealth. The charts show an increase in percentage share for college educated individuals and a decrease in percentage share for non-high school educated students. The charts also show that **college educated individuals control the vast majority of wealth (over 70%).** 
 
@@ -215,6 +211,3 @@ https://www.federalreserve.gov/econres/notes/feds-notes/wealth-inequality-and-co
 
 - NORC at the University of Chicago. (n.d.). Data security. SCF. Retrieved February 6, 2022, from https://scf.norc.org/DataSecurityandPrivacy.html
 - Tracking the COVID-19 economy's effects on food, housing, and employment hardships. Center on Budget and Policy Priorities. (2021, November 10). Retrieved February 6, 2022, from https://www.cbpp.org/research/poverty-and-inequality/tracking-the-covid-19-economys-effects-on-food-housing-and
-
-
-
