@@ -63,3 +63,12 @@ source("../source/clustered_bar_graph.R")
 clustered_bar_chart
 ```
 
+```{r, warning = FALSE, echo=FALSE}
+options(tidyverse.quiet = TRUE)
+source("../source/Boxplots.R")
+
+White_Plot
+Black_Plot
+Hispanic_Plot
+Other_Plot
+```
