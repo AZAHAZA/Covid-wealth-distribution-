@@ -10,6 +10,16 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Summary of Information
+
+```{r, warning = FALSE, echo=FALSE}
+library("knitr")
+options(tidyverse.quiet = TRUE)
+source("../source/SummaryInfo copy.R")
+df <- data.frame(summary_info)
+
+kable(df)
+```
 
 ## clustered bar chart
 
@@ -20,9 +30,8 @@ source("../source/clustered_bar_graph.R")
 
 clustered_bar_chart
 ```
-<<<<<<< HEAD
-The clustered bar chart shows the differences in the distribution of the data. Since the data for the chart contains one categorical and one numerical value, our group used a cluster bar chart to demonstrate <strong> the wealth distribution before and during the pandemic in different ethnicity to illustrate inequality</strong>. Besides, we decide to integrate <strong> interactive elements into the graph </strong> for better clarity. For example, when the user selects a section of the chart by left-clicking, it will automatically zoom into that section of the chart. After that, it will automatically re-scale itself by clicking the auto-scale button on the top right corner. The user can gain information when hovering over the bar. According to the chart, White Americans' wealth has increased steadily before and during the pandemic. However, minorities' wealth has remained mainly unchanged. Besides, White Americans' wealth is **at least six times** more than any minorities' wealth. Nonetheless, the chart provides evidence that correlates wealth inequality to minorities during the pandemic. 
 
+The clustered bar chart shows the differences in the distribution of the data. Since the data for the chart contains one categorical and one numerical value, our group used a cluster bar chart to demonstrate <strong> the wealth distribution before and during the pandemic in different ethnicity to illustrate inequality</strong>. Besides, we decide to integrate <strong> interactive elements into the graph </strong> for better clarity. For example, when the user selects a section of the chart by left-clicking, it will automatically zoom into that section of the chart. After that, it will automatically re-scale itself by clicking the auto-scale button on the top right corner. The user can gain information when hovering over the bar. According to the chart, White Americans' wealth has increased steadily before and during the pandemic. However, minorities' wealth has remained mainly unchanged. Besides, White Americans' wealth is **at least six times** more than any minorities' wealth. Nonetheless, the chart provides evidence that correlates wealth inequality to minorities during the pandemic. 
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
@@ -30,4 +39,16 @@ source("../source/Pie_Chart.R")
 fig1
 fig2
 ```
->>>>>>> 830f4d6f5dbb9911915ebbe801a0d285079b1494
+
+```{r, warning = FALSE, echo=FALSE}
+options(tidyverse.quiet = TRUE)
+source("../source/Pie_Chart.R")
+fig1
+fig2
+```
+
+```{r, warning = FALSE, echo=FALSE}
+options(tidyverse.quiet = TRUE)
+source("../source/linechart .R")
+fig
+```
