@@ -1,12 +1,14 @@
 ```{r setup, include=FALSE,warning=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
 ```
 
 
 ### Code Name : Vale
 
-## Project title : Economic Inequality and its Dynamics in the United States
+<br/>
 
+# Project title : Economic Inequality and its Dynamics in the United States
 
 ### Authors:
 
@@ -18,13 +20,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Johnny Carroll - jcarol17@uw.edu**
 
-### Keywords: Economy, Inequality, Inequity, Wealth Distribution, Income Distribution, Race, Education, Age
+<br/>
 
+#### Keywords: Economy, Inequality, Inequity, Wealth Distribution, Income Distribution, Race, Education, Age
 
-## Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+#### Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 
-
-## Date: Winter 2022
+#### Date: Winter 2022
 
 
 ## Abstract
@@ -73,6 +75,7 @@ Economic inequality is at the root of many social issues. By looking into such i
 
 As a first look at some of these questions, we have made a few charts to help visualize the distribution of wealth across the various factors using data from each of our datasets. 
 
+
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
 source("../source/clustered_bar_graph.R")
@@ -80,16 +83,23 @@ source("../source/clustered_bar_graph.R")
 clustered_bar_chart
 ```
 
+<br/>
+
 The clustered bar chart shows the differences in the distribution of the data. Since the data for the chart contains one categorical and one numerical value, our group used a cluster bar chart to demonstrate <strong> the wealth distribution before and during the pandemic in different ethnicity to illustrate inequality</strong>. Besides, we decide to integrate <strong> interactive elements into the graph </strong> for better clarity. For example, when the user selects a section of the chart by left-clicking, it will automatically zoom into that section of the chart. After that, it will automatically re-scale itself by clicking the auto-scale button on the top right corner. The user can gain information when hovering over the bar. According to the chart, White Americans' wealth has increased steadily before and during the pandemic. However, minorities' wealth has remained mainly unchanged. Besides, White Americans' wealth is **at least six times** more than any minorities' wealth. Nonetheless, the chart provides evidence that correlates wealth inequality to minorities during the pandemic. 
+
+<br/>
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
 source("../source/Pie_Charts.R")
 fig1
+
 fig2
 ```
 
 The pie charts show changes in wealth distribution by educational level from before and during the pandemic. Pie charts are simple but effective in displaying variables as percentage shares, and thus these charts provide valuable information about the concentration of wealth. The charts show an increase in percentage share for college educated individuals and a decrease in percentage share for non-high school educated students. The charts also show that **college educated individuals control the vast majority of wealth (over 70%).** 
+
+<br/>
 
 ```{r, warning = FALSE, echo=FALSE}
 options(tidyverse.quiet = TRUE)
@@ -106,13 +116,14 @@ The primary dataset, titled Distributional Financial Accounts (DFA) - Income Lev
 
 Here is a table showing a quick summary of information provided by the primary data set, DFA - Income Levels. 
 
+
 ```{r, warning = FALSE, echo=FALSE}
 library("knitr")
 options(tidyverse.quiet = TRUE)
 source("../source/SummaryInfo.R")
-df <- data.frame(summary_info)
-
-kable(df)
+df <- data.frame(summary_table)  
+  kbl(df) %>%
+  kable_styling(full_width = F)
 ```
 
 The first two entries show the number of of observations (rows) and variables (columns) in the dataset, respectively. The next three entries describe the difference in percentage of net worth distribution between the Top 1% and Bottom 20% of income earners in three key years: 2021 (during the pandemic), 2018 (before the pandemic), 
@@ -121,6 +132,8 @@ and 1989 (the earliest year for which data is available). These show the concent
 Entries 6, 7, and 8 show the difference between the mean and median net worth of all income groups within the same three key years as above. If the mean is significantly higher than the median, it shows a **disproportionate concentration of wealth in the higher end of the income scale**. The net worth of the 40-60% income group is used as a _representative value for median net worth_.
 
 The last entry describes the ratio of liability burden, which we define as the ratio of liabilities to assets, between the top 1% and bottom 20% income earners. This indicates that the bottom 20% faces **4 times the liability burden** as the top 1%. 
+
+<br/>
 
 ### Data Provenance
 
@@ -148,6 +161,8 @@ The last entry describes the ratio of liability burden, which we define as the r
   13. Consumer Credit: Dollars
   14. Other liabilities: Dollars
 
+<br/>
+
 * **Who collected the data? How was the data collection effort funded?**
 
   The data was collected by the National Opinion Research Center (NORC) at the University of Chicago, and is sponsored by the Federal Reserve Board in cooperation with the Department of the Treasury. Data from the SCF, is used by a multitude of organizations, from analysis by the Federal Reserve and news organizations to research by universities and economic research centers. More information the source of the data and the SCF can be found at this [link](https://www.federalreserve.gov/econres/aboutscf.htm).
@@ -162,25 +177,28 @@ The last entry describes the ratio of liability burden, which we define as the r
 
   Through a search for federal data on economic inequity, we came upon the Federal Reserve’s interactive data visualization titled “Distribution of Household Wealth in the U.S. since 1989” found at this [link](https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/#quarter:128;series:Net%20worth;demographic:networth;population:all;units:levels;range:2006.3,2021.3 ).
 
-  The visualization offered publicly downloadable datasets on each of the categories mentioned above.
+  The visualization offered publicly downloadable data sets on each of the categories mentioned above.
   
+<br/>
   
-For a brief glimpse at the Income dataset, here is a table with several entries from the three key years we've identified above, broken down by quarter. 
+For a brief glimpse at the Income data set, here is a table with several entries from the three key years we've identified above, broken down by quarter. 
 
 ```{r, warning = FALSE, echo=FALSE}
 library("knitr")
 options(tidyverse.quiet = TRUE)
 source("../source/AggregateTable.R")
-kable(aggregate_table)
+kbl(aggregate_table) %>%
+  kable_styling(full_width = F)
 ```
 
-Here are some aggregate datapoints, taking the mean for three variables - net worth, assets, and liabilities - for each income percentile group. 
+Here are some aggregate data points, taking the mean for three variables - net worth, assets, and liabilities - for each income percentile group. 
 
 ```{r, warning = FALSE, echo=FALSE}
 library("knitr")
 options(tidyverse.quiet = TRUE)
 source("../source/AggregateTable.R")
-AggregateDataTable
+kbl(AggregateDataTable) %>%
+  kable_styling(full_width = F)
 ```
   
 

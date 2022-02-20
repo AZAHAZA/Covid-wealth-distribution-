@@ -1,13 +1,11 @@
-library(tidyverse)
-library(dplyr)
-library(tidyr)
-library(data.table)
+library(tidyverse, warn.conflicts = FALSE)
+library(dplyr,warn.conflicts = FALSE)
+library(tidyr,warn.conflicts = FALSE)
+library(data.table,warn.conflicts = FALSE)
 #setwd("C:/Users/Atrey/OneDrive/Desktop/Info201Code/final-project-starter-AZAHAZA")
 
 
-income_distribution <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-AZAHAZA/main/data/dfa-income.csv")
-
-
+income_distribution <- read.csv("../data/dfa-income.csv")
 
 aggregate_table <- data.table(income_distribution)
 
