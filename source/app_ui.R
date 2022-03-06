@@ -8,7 +8,6 @@
 #
 
 library(shiny)
-
 source("tab_panel_intro.R")
 source("tab_panel_chart1.R")
 source("tab_panel_chart2.R")
@@ -50,3 +49,4 @@ ui <- navbarPage(
   # The project report
   tab_panel_report
 )
+
