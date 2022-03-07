@@ -7,19 +7,6 @@ library(shiny)
  library("ggplot2", warn.conflicts = FALSE)
   lint("tab_panel_chart1.R")
   wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
-
-
-  proportion <- wealth_race %>%
-    select(Category, Assets, `Net worth`) %>%
-    group_by(Category) %>%
-    rename(Net_worth = `Net worth`) %>%
-    summarize(
-      Assets = sum(Assets, na.rm = TRUE),
-      Net_worth = sum(Net_worth, na.rm = TRUE)) %>%
-    mutate(
-      proportion_wealth = Assets / total_assets,
-      proportion_Net_worth = Net_worth / total_Net_worth
-    ) 
   
   total_assets <- wealth_race %>%
     select(Assets) %>%
@@ -35,6 +22,19 @@ library(shiny)
       Net_worth = sum(Net_worth, na.rm = TRUE)
     ) %>%
     pull(Net_worth)
+  
+  proportion <- wealth_race %>%
+    select(Category, Assets, `Net worth`) %>%
+    group_by(Category) %>%
+    rename(Net_worth = `Net worth`) %>%
+    summarize(
+      Assets = sum(Assets, na.rm = TRUE),
+      Net_worth = sum(Net_worth, na.rm = TRUE)) %>%
+    mutate(
+      proportion_wealth = Assets / total_assets,
+      proportion_Net_worth = Net_worth / total_Net_worth
+    ) 
+  
     
 select_values <- colnames(proportion)
 
@@ -66,7 +66,7 @@ color_input <- selectInput(
 
 tab_panel_chart1 <-tabPanel(
     "Chart 1",
-    p("This is chart 1."),
+    p(" This is a bar chart that allows user to compare wealth in different demographics"),
     sidebarLayout(
       sidebarPanel(x_input,
                    y_input,
