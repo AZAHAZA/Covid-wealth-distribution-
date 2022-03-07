@@ -15,46 +15,30 @@ library("leaflet", warn.conflicts = FALSE)
 library("ggplot2", warn.conflicts = FALSE)
 lint("app_server.R")
 
+wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
 
+
+chart_data <- wealth_race %>%
+  mutate(Date = gsub(":Q1|:Q2|:Q3|:Q4","",Date)) %>%
+  select(Date, Category, Assets, `Net worth`) %>%
+  group_by(Date, Category) %>%
+  rename(Net_worth = `Net worth`) %>%
+  summarise(
+    Assets = sum(Assets, na.rm = TRUE),
+    Net_worth = sum(Net_worth, na.rm = TRUE)
+  )
 server <- function(input, output) {
   output$barchart <- renderPlotly({
     title <- paste0("Comparing ", input$x_var, " v.s. ", input$y_var)
-    chart <- ggplot(chart_data) +
-      geom_col(mapping = aes_string(x = input$x_var, y = input$y_var), 
+    chart <- ggplot(proportion) +
+      geom_col(mapping = aes_string(x = input$x_var, y = input$y_var),
                color = input$color
                  ) +
-      labs(x = input$x_var, y = input$y_var, title = title) 
+      labs(x = input$x_var, y = input$y_var, title = title)
     chart
     intergraph <-  ggplotly(chart)
     intergraph
   })
-  
-  output$linechart <- renderPlotly({
-    # title <- paste0("Comparing ", input$x_var, " v.s. ", input$y_var)
-    # line_chart <- ggplot(chart_data) +
-    #   geom_line(mapping = aes_string(x = input$x_var, y = input$y_var), 
-    #            color = input$color
-    #   ) + #scale_x_continuous(limits = year)
-    #   labs(x = input$x_var, y = input$y_var, title = title) 
-    # line_chart
-    # intergraph2 <-  ggplotly(line_chart)
-    # intergraph2
-    
-    fig <- plot_ly(
-      data = chart_data,     
-      x = ~input$x_var, 
-      y = ~input$y_var, 
-      color = ~Category, 
-      type = "scatter", 
-      mode = "lines" 
-    ) %>% layout(
-      title = "Wealth Distribution prior & during the Pandemic by Income Percentile Groups",
-      xaxis = list(title = 'Date'), 
-      yaxis = list(title = 'Assets') 
-    )
-    fig
-  })
-
 }
 
 

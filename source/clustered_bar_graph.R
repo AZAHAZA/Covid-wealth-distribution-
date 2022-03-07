@@ -3,7 +3,7 @@
 #tidyverse
 library("tidyverse",warn.conflicts = FALSE)
 library("plotly",warn.conflicts = FALSE)
-# setwd("~/Desktop/Info201Project/final-project-starter-AZAHAZA/source")
+ setwd("~/Desktop/final-project-starter-AZAHAZA/source")
 
 wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
 

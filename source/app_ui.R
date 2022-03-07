@@ -16,14 +16,14 @@ source("tab_panel_summary.R")
 source("tab_panel_report.R")
 
 ui <- navbarPage(
-  title = "Project Example",
+  title = "Economic Inequality",
   position = "fixed-top",
 
   # A simple header
   header = list(
     tags$style(type = "text/css", "body {padding-top: 70px;}"),
     hr(),
-    HTML("... Project Header... "),
+    HTML("Economic Inequality and its Dynamics in the United States"),
     hr()
   ),
 
