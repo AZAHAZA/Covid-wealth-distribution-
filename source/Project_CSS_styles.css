@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+  font-family: verdana;
+}
+h2 {
+  color: red;
+  font-family: verdana;
+}
+
+hr {
+  height:3px;
+  border-width:0;
+  color:gray;
+  background-color:red
+}

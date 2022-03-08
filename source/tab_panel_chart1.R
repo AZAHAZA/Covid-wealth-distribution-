@@ -26,7 +26,9 @@ library(shiny)
   proportion <- wealth_race %>%
     select(Category, Assets, `Net worth`) %>%
     group_by(Category) %>%
-    rename(Net_worth = `Net worth`) %>%
+    rename(Net_worth = `Net worth`,
+           Race = Category
+           ) %>%
     summarize(
       Assets = sum(Assets, na.rm = TRUE),
       Net_worth = sum(Net_worth, na.rm = TRUE)) %>%
@@ -56,8 +58,6 @@ y_input <- selectInput(
   selected = "Assets"
 )
 
-
-
 color_input <- selectInput(
   "color",
   label = "Color",
@@ -66,12 +66,21 @@ color_input <- selectInput(
 
 tab_panel_chart1 <-tabPanel(
     "Chart 1",
-    p(" This is a bar chart that allows user to compare wealth in different demographics"),
+    p("This is a bar chart that illustrates the magnitude of income inequality among different races in the United States."),
     sidebarLayout(
       sidebarPanel(x_input,
                    y_input,
                    color_input),
-      clustered_bar_chart_main_content
+      clustered_bar_chart_main_content,
+    ),
+    tags$div(
+      tags$br(),
+      "Our group wants to examine wealth distribution among different races.
+      Since the bar chart is effective in showing the distribution of categorical data and numerical data, it is appropriate to employ the chart in our analysis. 
+      We also include the interactive select input to allow the user to choose which variable to display. 
+      According to the chart, White Americans occupied ", strong("more than 80 percent"), " of the wealth in the nation. 
+      However, none of the minority groups has exceeded more than 10 percent of the total wealth. 
+      It is very concerning the effect of wealth inequality on the minorities, especially during the pandemic when unemployment surged due to lockdown. 
+      They have less disposable income than White Americans, which cause their life more difficult than before. "
     )
 )
-

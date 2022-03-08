@@ -21,7 +21,7 @@ wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
 
 server <- function(input, output) {
   output$barchart <- renderPlotly({
-    title <- paste0("Comparing ", input$x_var, " v.s. ", input$y_var)
+    title <- paste0("Wealth Distribution by ", input$x_var, " and ", input$y_var)
     chart <- ggplot(proportion) +
       geom_col(mapping = aes_string(x = input$x_var, y = input$y_var),
                color = input$color
