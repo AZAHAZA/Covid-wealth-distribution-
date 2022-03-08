@@ -8,6 +8,8 @@
 #
 
 library(shiny)
+library("DT")
+library("shinythemes")
 source("tab_panel_intro.R")
 source("tab_panel_chart1.R")
 source("tab_panel_chart2.R")
@@ -16,6 +18,7 @@ source("tab_panel_summary.R")
 source("tab_panel_report.R")
 
 ui <- navbarPage(
+  theme = shinytheme("slate"),
   title = "Economic Inequality",
   position = "fixed-top",
 
@@ -31,7 +34,7 @@ ui <- navbarPage(
   footer = list(
     tags$style(type = "text/css", "body {padding-top: 70px;}"),
     hr(),
-    HTML("... Project Footer ... "),
+    HTML("INFO-201 (Winter 2022) Group: AD-4"),
     hr()
   ),
 

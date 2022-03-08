@@ -6,7 +6,7 @@ library(shiny)
  library("leaflet", warn.conflicts = FALSE)
  library("ggplot2", warn.conflicts = FALSE)
   lint("tab_panel_chart1.R")
-  wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
+  wealth_race <- read_csv("../data/dfa-race.csv")
   
   total_assets <- wealth_race %>%
     select(Assets) %>%

@@ -18,15 +18,7 @@ lint("app_server.R")
 wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
 
 
-chart_data <- wealth_race %>%
-  mutate(Date = gsub(":Q1|:Q2|:Q3|:Q4","",Date)) %>%
-  select(Date, Category, Assets, `Net worth`) %>%
-  group_by(Date, Category) %>%
-  rename(Net_worth = `Net worth`) %>%
-  summarise(
-    Assets = sum(Assets, na.rm = TRUE),
-    Net_worth = sum(Net_worth, na.rm = TRUE)
-  )
+
 server <- function(input, output) {
   output$barchart <- renderPlotly({
     title <- paste0("Comparing ", input$x_var, " v.s. ", input$y_var)
