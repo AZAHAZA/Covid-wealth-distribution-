@@ -8,7 +8,7 @@ library("leaflet", warn.conflicts = FALSE)
 library("ggplot2", warn.conflicts = FALSE)
 lint("tab_panel_chart3.R")
 
-wealth_education_dist <- read.csv("../data/dfa-education.csv")
+wealth_education_dist <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-AZAHAZA/main/data/dfa-education.csv")
 
 box_data <- wealth_education_dist %>%
   select(Category, Net.worth, Assets) %>%

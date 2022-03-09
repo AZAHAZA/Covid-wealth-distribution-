@@ -7,7 +7,7 @@ library("leaflet", warn.conflicts = FALSE)
 library("ggplot2", warn.conflicts = FALSE)
 lint("tab_panel_chart2.R")
 
-income_pcercentage <- read_csv("../data/dfa-income.csv")
+income_pcercentage <- read_csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-AZAHAZA/main/data/dfa-income.csv")
 
 line_data <- income_pcercentage %>%
   mutate(Date = gsub(":Q1|:Q2|:Q3|:Q4", "", Date),
