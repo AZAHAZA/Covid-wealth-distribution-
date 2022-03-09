@@ -39,8 +39,8 @@ ui <- navbarPage(
   ),
 
   # The project introduction
+  includeCSS("Project_CSS_styles.css"),
   tab_panel_intro,
-
   # The three charts
   tab_panel_chart1,
   tab_panel_chart2,

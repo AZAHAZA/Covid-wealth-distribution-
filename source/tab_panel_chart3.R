@@ -10,15 +10,15 @@ lint("tab_panel_chart3.R")
 
 wealth_education_dist <- read.csv("../data/dfa-education.csv")
 
-pie_data <- wealth_education_dist %>%
+box_data <- wealth_education_dist %>%
   select(Category, Net.worth, Assets) %>%
   rename(Education_Level = Category,
          Net_worth = Net.worth)
 
-select_values <- colnames(pie_data)
+select_values <- colnames(box_data)
 
 pie_chart_main_content <- mainPanel(
-  plotlyOutput("piechart")
+  plotlyOutput("boxplot")
 )
 
 x_input <- selectInput(

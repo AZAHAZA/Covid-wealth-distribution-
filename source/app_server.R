@@ -29,15 +29,29 @@ server <- function(input, output) {
     intergraph
   })
 
-  output$piechart <- renderPlotly({
-    titlepiechart <- paste0("Data Distribution between ",
+  output$boxplot <- renderPlotly({
+    titlechart <- paste0("Data Distribution between ",
                             input$xvar, " and ",
                             input$yvar)
-    pie_chart <- ggplot(data = pie_data) +
+    boxplot <- ggplot(data = box_data) +
       geom_boxplot(mapping = aes_string(x = input$xvar, y = input$yvar),
                color = input$colour) +
-      labs(x = input$xvar, y = input$yvar, title = titlepiechart)
-    intergraph1 <-  ggplotly(pie_chart)
+      labs(x = input$xvar, y = input$yvar, title = titlechart)
+    intergraph1 <-  ggplotly(boxplot)
     intergraph1
   })
+  
+  output$linechart <- renderPlotly({
+    chart_title <- paste0("Wealth Distribution prior & during the Pandemic by Income Percentile Groups")
+    linechart <- line_data %>%
+      ggplot( aes(x=Date, y=Assets, group = Percentage, color = Percentage)) +
+      geom_line() +
+         labs(x = "Year", y = "Assets", title = chart_title ) +
+        scale_x_continuous(limits = input$date)
+    intergraph2 <-  ggplotly(linechart)
+    intergraph2
+  })
 }
+
+
+
