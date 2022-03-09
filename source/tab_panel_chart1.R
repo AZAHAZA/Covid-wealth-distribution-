@@ -15,7 +15,7 @@ library(shiny)
     ) %>%
     pull(Assets)
   
-  total_Net_worth <- wealth_race %>%
+  total_net_worth <- wealth_race %>%
     rename(Net_worth = `Net worth`) %>%
     select(Net_worth) %>%
     summarize(
@@ -34,9 +34,8 @@ library(shiny)
       Net_worth = sum(Net_worth, na.rm = TRUE)) %>%
     mutate(
       proportion_wealth = Assets / total_assets,
-      proportion_Net_worth = Net_worth / total_Net_worth
-    ) 
-  
+      proportion_Net_worth = Net_worth / total_net_worth
+    )
     
 select_values <- colnames(proportion)
 
@@ -64,9 +63,11 @@ color_input <- selectInput(
   choices = list("Red" = "red", "cyan", "Blue" = "blue", "Violet" = "purple3")
 )
 
-tab_panel_chart1 <-tabPanel(
+tab_panel_chart1 <- tabPanel(
     "Chart 1",
-    p("This is a bar chart that illustrates the magnitude of income inequality among different races in the United States."),
+    p("This is a bar chart that illustrates the magnitude
+      of income inequality among different
+      races in the United States."),
     sidebarLayout(
       sidebarPanel(x_input,
                    y_input,
@@ -76,11 +77,19 @@ tab_panel_chart1 <-tabPanel(
     tags$div(
       tags$br(),
       "Our group wants to examine wealth distribution among different races.
-      Since the bar chart is effective in showing the distribution of categorical data and numerical data, it is appropriate to employ the chart in our analysis. 
-      We also include the interactive select input to allow the user to choose which variable to display. 
-      According to the chart, White Americans occupied ", strong("more than 80 percent"), " of the wealth in the nation. 
-      However, none of the minority groups has exceeded more than 10 percent of the total wealth. 
-      It is very concerning the effect of wealth inequality on the minorities, especially during the pandemic when unemployment surged due to lockdown. 
-      They have less disposable income than White Americans, which cause their life more difficult than before. "
+      Since the bar chart is effective in showing the
+      distribution of categorical data and numerical data,
+      it is appropriate to employ the chart in our analysis.
+      We also include the interactive select input to allow
+      the user to choose which variable to display.
+      According to the chart, White Americans occupied "
+      , strong("more than 80 percent"), " of the wealth in the nation.
+      However, none of the minority groups has exceeded more
+      than 10 percent of the total wealth.
+      It is very concerning the effect of wealth inequality
+      on the minorities, especially during the
+      pandemic when unemployment surged due to lockdown.
+      They have less disposable income than White Americans,
+      which cause their life more difficult than before. "
     )
 )

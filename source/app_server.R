@@ -15,13 +15,10 @@ library("leaflet", warn.conflicts = FALSE)
 library("ggplot2", warn.conflicts = FALSE)
 lint("app_server.R")
 
-wealth_race <- read_csv("../data/dfa-race.csv",show_col_types = FALSE)
-
-
-
 server <- function(input, output) {
   output$barchart <- renderPlotly({
-    title <- paste0("Wealth Distribution by ", input$x_var, " and ", input$y_var)
+    title <- paste0("Wealth Distribution by ",
+                    input$x_var, " and ", input$y_var)
     chart <- ggplot(proportion) +
       geom_col(mapping = aes_string(x = input$x_var, y = input$y_var),
                color = input$color
@@ -31,25 +28,16 @@ server <- function(input, output) {
     intergraph <-  ggplotly(chart)
     intergraph
   })
-  
+
   output$piechart <- renderPlotly({
+    titlepiechart <- paste0("Data Distribution between ",
+                            input$xvar, " and ",
+                            input$yvar)
     pie_chart <- ggplot(data = pie_data) +
       geom_boxplot(mapping = aes_string(x = input$xvar, y = input$yvar),
-               color = input$colour)
+               color = input$colour) +
+      labs(x = input$xvar, y = input$yvar, title = titlepiechart)
     intergraph1 <-  ggplotly(pie_chart)
     intergraph1
   })
 }
-
-# ggplot(data, aes(x="", y=value, fill=group)) +
-#   geom_bar(stat="identity", width=1) +
-#   coord_polar("y", start=0)
-# 
-# 
-# 
-# title <- paste0("Wealth Distribution by ", " and ", input$var)
-# pie_chart <- ggplot(pie_data) +
-#   geom_col(mapping = aes_string(x = "", y = input$var), 
-#            fill = pie_data$Education_Level )+
-#   coord_polar(theta = "y")
-# 
