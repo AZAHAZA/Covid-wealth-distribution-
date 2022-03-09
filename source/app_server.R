@@ -40,18 +40,15 @@ server <- function(input, output) {
     intergraph1 <-  ggplotly(boxplot)
     intergraph1
   })
-  
+
   output$linechart <- renderPlotly({
     chart_title <- paste0("Wealth Distribution prior & during the Pandemic by Income Percentile Groups")
     linechart <- line_data %>%
-      ggplot( aes(x=Date, y=Assets, group = Percentage, color = Percentage)) +
+      ggplot(aes(x = Date, y = Assets, group = Percentage, color = Percentage)) +
       geom_line() +
-         labs(x = "Year", y = "Assets", title = chart_title ) +
+         labs(x = "Year", y = "Assets", title = chart_title) +
         scale_x_continuous(limits = input$date)
     intergraph2 <-  ggplotly(linechart)
     intergraph2
   })
 }
-
-
-

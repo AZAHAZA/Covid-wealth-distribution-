@@ -62,7 +62,8 @@ tab_panel_chart3 <- tabPanel(
       distribution of the data among different categories. According to the
       boxplot, there is a correlation between higher education with wealth.
       The median of the college degrees has more assets and higher net worth
-      than all other categories. Therefore, ", strong("providing affordable higher
+      than all other categories. Therefore,
+      ", strong("providing affordable higher
       education to low-income families will improve social mobility.")
     )
 )

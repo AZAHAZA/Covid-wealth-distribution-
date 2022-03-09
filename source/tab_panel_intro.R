@@ -3,6 +3,7 @@
 library(shiny)
 tab_panel_intro <-tabPanel(
     "Introduction",
+    includeCSS("Project_CSS_styles.css"),
     tags$div(class = "header", "Economic Inequality and its Dynamics in the United States"),
     HTML('<center><img src="https://images.squarespace-cdn.com/content/v1/57d9e959d482e972e8434364/1479428409998-2GSOXSQY8AE6H0P0C2FP/image-asset.png";width="400px"; height = "400px"></center>'),
     tags$div(
