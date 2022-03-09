@@ -40,7 +40,7 @@ library(shiny)
     
 select_values <- colnames(proportion)
 
-clustered_bar_chart_main_content <- mainPanel(
+bar_chart_main_content <- mainPanel(
   plotlyOutput("barchart")
 )
 
@@ -48,7 +48,7 @@ x_input <- selectInput(
   "x_var",
   label = "X Variable",
   choices = select_values,
-  selected = "Category"
+  selected = "Race"
 )
 
 y_input <- selectInput(
@@ -71,7 +71,7 @@ tab_panel_chart1 <-tabPanel(
       sidebarPanel(x_input,
                    y_input,
                    color_input),
-      clustered_bar_chart_main_content,
+      bar_chart_main_content,
     ),
     tags$div(
       tags$br(),
