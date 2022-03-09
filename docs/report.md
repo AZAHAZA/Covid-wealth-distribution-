@@ -42,6 +42,7 @@ If intervention is taken, the group that was least prepared for the COVID-19 pan
   - https://www.federalreserve.gov/econres/notes/feds-notes/wealth-inequality-and-covid-19-evidence-from-the-distributional-financial-accounts-20210830.htm
   - https://www2.deloitte.com/us/en/insights/economy/issues-by-the-numbers/covid-impact-on-income-inequality.html
   - https://www.cbpp.org/research/poverty-and-inequality/tracking-the-covid-19-economys-effects-on-food-housing-and)
+
 ## Research questions
 
 Economic inequality is at the root of many social issues. By looking into such inequality, we are able to examine people’s quality of life and predict determinants of the health and well-being of individuals and families. Looking at how economic well-being in the United States varies with social factors such as age/generation, race/ethnicity, income levels, and education will give us a glimpse into the stratification of American society and a basis to formulate potential solutions to this pressing problem. Some guiding questions that formed the basis of our research are as follows:
@@ -54,11 +55,10 @@ Economic inequality is at the root of many social issues. By looking into such i
 
 4. How has the COVID-19 pandemic affected wealth and income distribution? How do these observed dynamics vary between the start (2019/2020) and the middle (2021) of the pandemic?
 
-## The Dataset
+
+## The Data
 
 The primary dataset, titled Distributional Financial Accounts (DFA) - Income Levels, consists of 14 variables/attributes (columns) and 517 observations (rows). The secondary datasets, DFA - Net Worth Levels, Race Levels, and Education Levels, are identical in dimensions and complexity. Each of these datasets contains the same variables but varies in observations based on the entries in the second column, “Category.” Thus, they are set up for comparative analysis along specific categorizations of interest.
-
-### Data Provenance
 
 * **Who or what is represented in the data?**
 
@@ -84,7 +84,40 @@ The primary dataset, titled Distributional Financial Accounts (DFA) - Income Lev
   13. Consumer Credit: Dollars
   14. Other liabilities: Dollars
 
-<br/>
+
+* **Who collected the data? How was the data collection effort funded?**
+
+  The data was collected by the National Opinion Research Center (NORC) at the University of Chicago, and is sponsored by the Federal Reserve Board in cooperation with the Department of the Treasury. Data from the SCF, is used by a multitude of organizations, from analysis by the Federal Reserve and news organizations to research by universities and economic research centers. More information the source of the data and the SCF can be found at this [link](https://www.federalreserve.gov/econres/aboutscf.htm).
+
+* **How was the data validated and held secure? Is it credible and trustworthy?**
+
+  The SCF website describes in detail their policies regarding data confidentiality and security. Per their [website](https://scf.norc.org/DataSecurityandPrivacy.html) they utilize a multi-tiered approach to manage issues associated with computer and data security. Personally Identifiable Information (PII) is used only to contact survey respondents and is fully anonymized before providing the data to the SCF sponsor, the Federal Reserve Board. In their surveys, the NORC is in compliance with several federal regulations on information security and management, primarily the Federal Information Security Management Act (FISMA) and many others.
+
+  The NORC and Federal Reserve make concerted efforts to ensure that the study is representative of households from all economic strata. Households are randomly selected as per guidelines laid out in working papers on the [Federal reserve website](https://www.federalreserve.gov/econres/scf_workingpapers.htm) with the intention to represent the full range of households in the United States. As per the Federal Reserve, “to maintain the scientific validity of the study, interviewers are not allowed to substitute respondents for families that do not participate. Thus, if a family declines to participate, it means that families like theirs may not be represented clearly in national discussions.” Thus, the representativeness of the data is impacted by households that do not participate, but on the whole, there seem to be extensive measures taken to safeguard the credibility, security, and validity of the data.
+
+* **How did you obtain the data?**
+
+  Through a search for federal data on economic inequity, we came upon the Federal Reserve’s interactive data visualization titled “Distribution of Household Wealth in the U.S. since 1989” found at this [link](https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/#quarter:128;series:Net%20worth;demographic:networth;population:all;units:levels;range:2006.3,2021.3 ).
+
+  The visualization offered publicly downloadable data sets on each of the categories mentioned above.
+
+  Each observation contains data on net worth by category and fiscal quarter/year. Categories follow the titles of each of the datasets: the Networth Levels dataset contains categories “Top1,” “Next9,” “Next40,” and “Bottom50,” dividing households into groups based on percentiles of net worth. Similarly, the other datasets have categories dividing households into groups based on race, education levels, and income levels.
+
+* **Each dataset has 14 variables:**
+  1. Date: Year and Fiscal Quarter (ex: 1994:Q3)
+  2. Category: Varies by dataset (ex: Bottom50, Asian)
+  3. Net Worth: Assets - Liabilities, Dollars
+  4. Assets: Dollars, with 6 subsections as additional variables
+  5. Real Estate: Dollars
+  6. Consumer Durables: Dollars
+  7. Corporate Equities and mutual fund shares: Dollars
+  8. Pension Entitlements: Dollars
+  9. Private businesses: Dollars
+  10. Other Assets: Dollars
+  11. Liabilities: Dollars, with 3 subsections as additional variables
+  12. Home Mortgages: Dollars
+  13. Consumer Credit: Dollars
+  14. Other liabilities: Dollars
 
 * **Who collected the data? How was the data collection effort funded?**
 
@@ -142,6 +175,7 @@ Based on our current assessment of the sociopolitical landscape in the US, we ha
 ## Conclusion
 
 Economic inequity has increased dramatically over the last three decades, and its negative consequences are disproportionately suffered by disadvantaged groups - low income earners, racial minorities, and people with lower education levels, among others. These groups are most commonly on the receiving end of poverty, unemployment, lack of access to quality healthcare and food, and reduced educational and occupational prospects, all of which are self-reinforcing and intergenerational. Analyses of wealth distribution provide valuable insight to policymakers on potential steps to take to close the gap between the privileged and the struggling, and help inspire positive outcomes for victims of longstanding inequities.
+
 
 
 ## References

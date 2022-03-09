@@ -64,11 +64,11 @@ If intervention is taken, the group that was least prepared for the COVID-19 pan
 
 Economic inequality is at the root of many social issues. By looking into such inequality, we are able to examine people’s quality of life and predict determinants of the health and well-being of individuals and families. Looking at how economic well-being in the United States varies with social factors such as age/generation, race/ethnicity, income levels, and education will give us a glimpse into the stratification of American society and a basis to formulate potential solutions to this pressing problem. Some guiding questions that we will hope to answer are as follows:
 
-1. How has the distribution of wealth in the United States changed over the last decade?
+1. How has the distribution of wealth in the United States changed over the pandemic?
 
-2. How does the distribution of wealth vary with an individual’s level of education? What are the education dynamics observed from the dataset?
+2. How does the distribution of wealth vary with an individual’s level of education? What are the education dynamics observed from the data set?
 
-3. How does the distribution of wealth vary with race? What are the racial or ethnic dynamics observed from the dataset?
+3. How does the distribution of wealth vary with race? What are the racial or ethnic dynamics observed from the data set?
 
 4. How has the COVID-19 pandemic affected wealth and income distribution? How do these observed dynamics vary between the start (2019/2020) and the middle (2021) of the pandemic?
 
