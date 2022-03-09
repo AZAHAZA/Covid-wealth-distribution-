@@ -1,9 +1,11 @@
 h1 {
-  color: blue;
-  font-family: verdana;
+  color: White;
+   font-family: "Times New Roman", Times, serif;
+   text-decoration: underline;
 }
+
 h2 {
-  color: red;
+  color: #00BFFF;
   font-family: verdana;
 }
 
@@ -14,9 +16,17 @@ hr {
   background-color:#4B0082
 }
 
-img {
-  width= 400px;
-  height = 400px;
-  margin-left: auto;
-  margin-right: auto;
+.header {
+  font-family: Cursive;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.chart_type {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding-bottom: 25px;
+  font-size: 30px;
 }

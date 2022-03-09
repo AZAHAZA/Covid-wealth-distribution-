@@ -3,9 +3,8 @@
 library(shiny)
 tab_panel_intro <-tabPanel(
     "Introduction",
+    tags$div(class = "header", "Economic Inequality and its Dynamics in the United States"),
     HTML('<center><img src="https://images.squarespace-cdn.com/content/v1/57d9e959d482e972e8434364/1479428409998-2GSOXSQY8AE6H0P0C2FP/image-asset.png";width="400px"; height = "400px"></center>'),
-    #img(src= "https://images.squarespace-cdn.com/content/v1/57d9e959d482e972e8434364/1479428409998-2GSOXSQY8AE6H0P0C2FP/image-asset.png"),
-    #HTML('<img src="https://images.squarespace-cdn.com/content/v1/57d9e959d482e972e8434364/1479428409998-2GSOXSQY8AE6H0P0C2FP/image-asset.png">'),
     tags$div(
       tags$br(),
       "Economic inequality is one of the largest issues currently facing the United States and is at the root 

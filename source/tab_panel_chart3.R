@@ -43,6 +43,7 @@ color_input <- selectInput(
 
 tab_panel_chart3 <- tabPanel(
     "Chart 3",
+    tags$div(class = "chart_type", "Boxplot"),
     p("This is a boxplot that show the data distribution of the educational
       level and economic inequality"),
     sidebarLayout(

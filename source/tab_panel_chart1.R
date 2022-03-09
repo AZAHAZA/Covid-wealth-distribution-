@@ -65,6 +65,7 @@ color_input <- selectInput(
 
 tab_panel_chart1 <- tabPanel(
     "Chart 1",
+    tags$div(class = "chart_type", "Bar Chart"),
     p("This is a bar chart that illustrates the magnitude
       of income inequality among different
       races in the United States."),

@@ -36,6 +36,7 @@ slider <- sliderInput(
 
 tab_panel_chart2 <- tabPanel(
   "Chart 2",
+  tags$div(class = "chart_type", "Line Graph"),
   p("This is a line chart that illustrates the different wealth distribution from
     percentages."),
   sidebarLayout(
