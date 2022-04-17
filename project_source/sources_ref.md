@@ -1,0 +1,12 @@
+
+### Sources and References
+
+- Centers for Disease Control and Prevention. (2018, April 4). CDC. Centers for Disease Control and Prevention. Retrieved April 17, 2022, from https://emergency.cdc.gov/agent/riotcontrol/factsheet.asp
+- Clark, D., &amp; Regan, P. (2021, January 9). Mass mobilization protest data. Harvard Dataverse. Retrieved April 17, 2022, from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FHTTWYL
+- Haar, R. J., Iacopino, V., Ranadive, N., Weiser, S. D., &amp; Dandu, M. (2017, October 19). Health impacts of chemical irritants used for crowd control: A systematic review of the injuries and deaths caused by tear gas and pepper spray - BMC public health. BioMed Central. Retrieved April 17, 2022, from https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-017-4814-6
+- Kell, G. (2020, June 12). Are crowd-control weapons dangerous? very, says UC Berkeley expert. UC Berkeley Public Health. Retrieved April 17, 2022, from https://publichealth.berkeley.edu/news-media/school-news/are-crowd-control-weapons-dangerous/
+- Leung, H. (2019, December 5). Tear gas sparks public health anxiety in Hong Kong. Time. Retrieved April 17, 2022, from https://time.com/5743663/tear-gas-hong-kong/
+- Ness, L. V. (n.d.). Tear gas bans: A policing change not gaining traction. The Pew Charitable Trusts. Retrieved April 17, 2022, from https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2020/08/04/tear-gas-bans-a-policing-change-not-gaining-traction
+- Rebecca, K. K., Marsh, B., &amp; Singhvi, A. (2020, June 16). Here are the 100 U.S. cities where protesters were tear-gassed. The New York Times. Retrieved April 17, 2022, from https://www.nytimes.com/interactive/2020/06/16/us/george-floyd-protests-police-tear-gas.html
+- Torgrimson-Ojerio, B. N., Mularski, K. S., Peyton, M. R., Keast, E. M., Hassan, A., &amp; Ivlev, I. (2021, April 26). Health issues and healthcare utilization among adults who reported exposure to tear gas during 2020 Portland (OR) protests: A cross-sectional survey - BMC Public Health. BioMed Central. Retrieved April 17, 2022, from https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-10859-w
+- WP Company. (2020, January 22). Fatal force: Police shootings database. The Washington Post. Retrieved April 16, 2022, from https://www.washingtonpost.com/graphics/investigations/police-shootings-database/

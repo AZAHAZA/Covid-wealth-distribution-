@@ -1,0 +1,27 @@
+h1 {
+  color: Black;
+   font-family: "Times New Roman", Times, serif;
+   text-decoration: underline;
+}
+
+
+hr {
+  height:3px;
+  border-width:0;
+  background-color:#4B0082
+}
+
+.header {
+  font-family: Cursive;
+  padding: 60px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+.chart_type {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
