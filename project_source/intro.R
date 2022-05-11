@@ -5,7 +5,7 @@ intro <-tabPanel(
     "Introduction",
     includeCSS("Project_CSS_styles.css"),
     tags$div(class = "header", "The Health Impact of Using Tear Gas as Crowd-Control Weapon"),
-    HTML('<center><img src="https://github.com/mattschcs/project-teargas-/blob/main/project-teargas-/project_source/pic.jpeg?raw=true"></center>'),
+    HTML('<center><img src="https://github.com/mattschcs/project-teargas-/blob/main/project_source/pic.jpeg?raw=true"></center>'),
     tags$div(
       tags$br(),
       "Freedom of assembly, the right to hold protests or meetings in public where people advocate and defend their collective idea, is often recognized as a human right. 

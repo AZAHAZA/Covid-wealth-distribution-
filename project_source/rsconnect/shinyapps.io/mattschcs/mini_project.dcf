@@ -1,0 +1,13 @@
+name: mini_project
+title: mini_project
+username:
+account: mattschcs
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6106199
+bundleId: 5893511
+url: https://mattschcs.shinyapps.io/mini_project/
+when: 1652241744.29691
+lastSyncTime: 1652241744.29693
+asMultiple: FALSE
+asStatic: FALSE

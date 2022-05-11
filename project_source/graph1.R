@@ -132,13 +132,13 @@ library(shiny)
   tags$div(
     tags$br(),
     "The", a("data", href = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HTTWYL"), "from Figure 1 is from the", a("Harvard Dataverse", href = "https://support.dataverse.harvard.edu"), ". 
-    According to Figure 1, the number of protests worldwide has had an increasing trend since 1990. 
-    The sharp decrease in protests from 2019 to 2020 is probably because of the worldwide pandemic restrictions,
-    yet, the number still has a general upward trend."
+    From Figure 1, the number of protests worldwide has had an increasing trend since 1990. 
+    The sharp decrease in protests from 2019 to 2020 is probably due to the worldwide pandemic restrictions,
+    yet, the number still displays a general upward trend."
     ),
   tags$div(
     tags$br(),
-    "The data from Figure 2 is from ", a("Washington Post's database", href = "https://www.washingtonpost.com/graphics/investigations/police-shootings-database/"),". The database has been tracking police brutality since 2015. According to figure 2, police not having a body camera has caused the majority of death. Besides, many suspects in the dataset neither fleed nor carried lethal weapons. It seems unreasonable that they got shot by law enforcement. "
+    "The data from Figure 2 is from ", a("Washington Post's database", href = "https://www.washingtonpost.com/graphics/investigations/police-shootings-database/"),". The database has been tracking police brutality since 2015. According to figure 2, police without a body camera has caused the majority of death. Besides, many suspects in the dataset neither fleed nor carried lethal weapons. It seems unreasonable that they got shot by law enforcement, and there should be a better way to handle this. "
   ),tags$div(
     tags$br(),
 "The maximum point in Figure 1 correlates with the highest point in Figure2. With the increasing number of protests accompanied by police brutality, the growing concern for overusing crowd control weapons in protest will become the new type of police brutality."
